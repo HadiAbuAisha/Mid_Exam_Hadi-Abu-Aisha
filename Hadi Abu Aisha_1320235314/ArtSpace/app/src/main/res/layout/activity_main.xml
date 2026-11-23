@@ -1,0 +1,121 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5EC"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingTop="70dp"
+        android:paddingBottom="30dp">
+
+        <!-- Artwork Counter -->
+        <TextView
+            android:id="@+id/tvCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 / 6"
+            android:textSize="20sp"
+            android:textColor="#241C18"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Artwork Image Frame -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:background="#FFFFFF"
+            android:elevation="10dp"
+            android:padding="28dp">
+
+            <ImageView
+                android:id="@+id/imgArtwork"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:contentDescription="Artwork Image"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </FrameLayout>
+
+        <!-- Artwork Information -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="#FCE9DF"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deep Field Stellar Deaths"
+                android:textSize="27sp"
+                android:textColor="#261A15" />
+
+            <TextView
+                android:id="@+id/tvArtistYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Smacs Carin (2021)"
+                android:textSize="16sp"
+                android:textColor="#30231D" />
+
+        </LinearLayout>
+
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:id="@+id/layoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Previous"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#914F1E"
+                android:enabled="false" />
+
+            <Space
+                android:layout_width="14dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#914F1E"
+                android:enabled="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

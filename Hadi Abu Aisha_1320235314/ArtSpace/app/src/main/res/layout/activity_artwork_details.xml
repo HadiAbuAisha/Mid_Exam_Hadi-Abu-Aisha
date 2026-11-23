@@ -1,0 +1,42 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFF5EC">
+
+    <TextView
+        android:id="@+id/tvDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Artwork Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#261A15"
+        android:gravity="center"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/btnVisitWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Visit Website"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#914F1E" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#914F1E" />
+
+</LinearLayout>
